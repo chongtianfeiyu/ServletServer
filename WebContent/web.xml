@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <servelt>
+    <servlet-name>MyUniqueServlet</servlet-name>
+    <servlet-class>com.hello915.javaweb.servlets.MyUniqueServlet</servlet-class>
+  </servelt>
+  <servlet-mapping>
+    <servlet-name>MyUniqueServlet</servlet-name>
+    <url-pattern>/com/hello915/javaweb/servlets/MyUniqueServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
