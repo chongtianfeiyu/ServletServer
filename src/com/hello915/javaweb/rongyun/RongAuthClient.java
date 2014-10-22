@@ -130,9 +130,8 @@ public class RongAuthClient {
 	
 	public static void main(String[] args) {
 		try {
-			// 靠，不要再调试了，再调试就够一个百个了
 			//{"code":200,"userId":"18280098503","token":"eMjiZe5WjlOt3pqxU5YIrPeRPXh+XPrHap2+1iyzkjJpRDSFL+7nLU3Kn8YMcZ2lenNINf0fH2bNTNAo+4W9F55EsqyOwYa4"}
-			System.out.println(auth("8luwapkvuxazl","hgKLk3Refgt59P","18280098504","思无天","http://10.4.101.112:8090/logo.png"));
+			System.out.println(auth("bmdehs6pdvq1s","fuiplalS2Bdmwl","18280098505","思无天","http://10.4.101.112:8090/logo.png"));
 		} catch (RongAuthException e) {
 			System.err.println("Error getting token from api server, errorCode="+e.getErrorCode()+", errorMessage="+e.getMessage());
 		}

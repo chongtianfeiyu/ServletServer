@@ -36,29 +36,10 @@ public class MyUniqueServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		String flag = request.getParameter("flag");
-		String name = request.getParameter("name");
-		String id = request.getParameter("id");
-		String pwd = request.getParameter("password");
-		String portrait = request.getParameter("portrait");
-		String returnStr = null;
-		System.out.println(name);
-		switch(flag){
-		case "LOGIN":
-			break;
-		case "REGISTER":
-			returnStr = rongyun.register(name, id, pwd, portrait);
-			break;
-		default:
-			break;
-		}
-		response.setContentType("text/html;charset=UTF-8");
-		response.setCharacterEncoding("UTF-8");
-		response.setContentType("text/xml");
-		PrintWriter out = response.getWriter();
-		out.println("<root><books><book><bookname>book1" + flag + "/" + 
-		name + "/" + id +"/" + pwd + "/" + portrait + "/" + returnStr +
-		"</bookname></book></books></root>");
+//		response.setContentType("text/html;charset=UTF-8");
+//		response.setCharacterEncoding("UTF-8");
+//		response.setContentType("text/xml");
+		control.Redict(request, response);
 	}
 
 	/**
